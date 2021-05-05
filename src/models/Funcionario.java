@@ -29,7 +29,7 @@ public class Funcionario {
 	
 	@Override
 	public String toString() {
-		return "Nme: " + getNome() + " | PIS: " + getPis();
+		return "Funcionário : " + getNome() + " | PIS: " + getPis()+ "| Admissão: " + dataAdm;
 	}
 	
 }

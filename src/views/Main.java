@@ -33,13 +33,13 @@ public class Main {
 				
 			case 3:
 				
-				//Inclusão de entradas e saidas funcionario
+				CadastrarMarcacoes.renderizar();
 								
 				break;
 				
 			case 4:
 
-				//Relatorio de horas
+				ListaMarcacao.renderizar();
 				
 				break;
 				
