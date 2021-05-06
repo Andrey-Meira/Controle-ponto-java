@@ -51,7 +51,7 @@ public class Marcacao {
 	
 	@Override
     public String toString() {
-        return "\n marcação do dia "+ dataMarcacao+ "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
+        return "\n Marcação do dia "+ dataMarcacao+ "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
         		"\nVolta do Almoco:  " + voltaAlmoco + "\nSaida: " + saida;
     }
 	 

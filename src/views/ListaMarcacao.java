@@ -8,7 +8,7 @@ public class ListaMarcacao {
 	
 	public static void renderizar() {
 		System.out.println("\n".repeat(15));
-		System.out.println("\n-- LISTAR Marcacoes --\n");
+		System.out.println("\n-------- RELATORIO DE HORAS TRABALHADAS --------\n");
 		for(Marcacao marcacaoCadastrada : MarcacaoController.listarMarcacoes()) {
 			
 				System.out.println(marcacaoCadastrada);
