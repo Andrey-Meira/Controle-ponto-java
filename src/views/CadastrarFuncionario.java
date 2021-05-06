@@ -23,6 +23,7 @@ public class CadastrarFuncionario {
 		funcionario.setPis(sc.nextInt());
 		System.out.println("\nDigite a data de admissão do funcionário");
 		
+		
 		String dataAdm = sc.next(); 
 		SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 		Date date = null;
@@ -32,7 +33,7 @@ public class CadastrarFuncionario {
 			e.printStackTrace();
 		}
 		
-		funcionario.setDataAdm(date);
+		funcionario.setDataAdm(dataAdm);
 		
 		if(FuncionarioController.cadastrar(funcionario.getPis(), funcionario)) {
 			System.out.println("Funcionário cadastrado com sucesso");

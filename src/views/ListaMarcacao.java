@@ -1,5 +1,6 @@
 package views;
 
+
 import controllers.MarcacaoController;
 import models.Marcacao;
 
@@ -10,7 +11,9 @@ public class ListaMarcacao {
 		System.out.println("\n-- LISTAR Marcacoes --\n");
 		for(Marcacao marcacaoCadastrada : MarcacaoController.listarMarcacoes()) {
 			
-			System.out.println(marcacaoCadastrada);
+				System.out.println(marcacaoCadastrada);
+				System.out.println("\n Horas Trabalhadas: " + MarcacaoController.calculo(marcacaoCadastrada));		
+					
 		}	
 	}  
 	

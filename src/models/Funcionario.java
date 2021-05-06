@@ -6,7 +6,7 @@ public class Funcionario {
 	
 	private String nome;
 	private int pis;
-	private Date dataAdm;
+	private String dataAdm;
 	
 	public String getNome() {
 		return nome;
@@ -20,10 +20,10 @@ public class Funcionario {
 	public void setPis(int pis) {
 		this.pis = pis;
 	}
-	public Date getDataAdm() {
+	public String getDataAdm() {
 		return dataAdm;
 	}
-	public void setDataAdm(Date dataAdm) {
+	public void setDataAdm(String dataAdm) {
 		this.dataAdm = dataAdm;
 	}
 	

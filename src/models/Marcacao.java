@@ -1,5 +1,6 @@
 package models;
 
+import java.sql.Date;
 
 public class Marcacao {
 	
@@ -8,14 +9,14 @@ public class Marcacao {
 	private Double saidaAlmoco;
 	private Double voltaAlmoco;
 	private Double saida;
-	private Double somar;
+	private String dataMarcacao;
 		
 	
-	public Double getSomar() {
-		return somar = entrada + saidaAlmoco + voltaAlmoco + saida ;
+	public String getDataMarcacao() {
+		return dataMarcacao;
 	}
-	public void setSomar(Double somar) {
-		this.somar = somar;
+	public void setDataMarcacao(String dataMarcacao) {
+		this.dataMarcacao = dataMarcacao;
 	}
 	public Double getEntrada() {
 		return entrada;
@@ -50,9 +51,8 @@ public class Marcacao {
 	
 	@Override
     public String toString() {
-        return "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
-        		"\nVolta do Almoco:  " + voltaAlmoco + "\nSaida: " + saida 
-        		+ "\nSoma :" + somar;
+        return "\n marcação do dia "+ dataMarcacao+ "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
+        		"\nVolta do Almoco:  " + voltaAlmoco + "\nSaida: " + saida;
     }
 	 
 	

@@ -1,5 +1,8 @@
 package views;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 import controllers.FuncionarioController;
@@ -28,6 +31,21 @@ public class CadastrarMarcacoes {
 			marcacao = new Marcacao();
 						
 			marcacao.setFuncionarios(funcionario);
+			System.out.println("\n Informe a data da marcação:");
+			
+			String dataMarcacao = sc.next(); 
+			SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+			Date date = null;
+			try {
+				date = formatter.parse(dataMarcacao);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+			
+			marcacao.setDataMarcacao(dataMarcacao);
+			
+			
+			
 			System.out.println("\n Digita a hora de entrada :");
 		    marcacao.setEntrada(sc.nextDouble());
 			System.out.println("\n Digita a hora saida para o almoço :");
