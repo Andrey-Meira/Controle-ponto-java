@@ -6,8 +6,29 @@ public class Funcionario {
 	
 	private String nome;
 	private int pis;
+	private String empresa;
+	private String cargo;
+	private String setor;
 	private String dataAdm;
-	
+			
+	public String getEmpresa() {
+		return empresa;
+	}
+	public void setEmpresa(String empresa) {
+		this.empresa = empresa;
+	}
+	public String getCargo() {
+		return cargo;
+	}
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+	public String getSetor() {
+		return setor;
+	}
+	public void setSetor(String setor) {
+		this.setor = setor;
+	}
 	public String getNome() {
 		return nome;
 	}
@@ -29,7 +50,12 @@ public class Funcionario {
 	
 	@Override
 	public String toString() {
-		return "Funcionário : " + getNome() + " | PIS: " + getPis()+ "| Admissão: " + dataAdm;
+		return "Funcionário : " + getNome() + 
+				" | PIS: " + getPis() + 
+				" | Empresa: " + getEmpresa() +
+				" | Cargo: " + getCargo() +
+				" | Setor: " + getSetor() +
+				" | Admissão: " + dataAdm;
 	}
 	
 }

@@ -19,6 +19,12 @@ public class CadastrarFuncionario {
 		System.out.println("\n-- CADASTRAR FUNCIONÁRIO --\n");
 		System.out.println("\nEntre com o nome do funcionário");
 		funcionario.setNome(sc.next());
+		System.out.println("\nEntre com o nome da empresa");
+		funcionario.setEmpresa(sc.next());
+		System.out.println("\nEntre com o cargo do funcionário");
+		funcionario.setCargo(sc.next());
+		System.out.println("\nEntre com o setor do funcionário");
+		funcionario.setSetor(sc.next());
 		System.out.println("\nDigite o PIS do funcionário");
 		funcionario.setPis(sc.nextInt());
 		System.out.println("\nDigite a data de admissão do funcionário");
