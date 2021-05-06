@@ -8,5 +8,6 @@ public class Menu {
 		System.out.println("4 – Relatorio de horas trabalhadas:");
 		System.out.println("0 – Sair");
 		System.out.print("\nDigite sua opção: ");
+		//System.out.println("\n--------------------------------------------------------------------");
 	}
 }

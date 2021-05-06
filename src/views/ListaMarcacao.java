@@ -12,7 +12,8 @@ public class ListaMarcacao {
 		for(Marcacao marcacaoCadastrada : MarcacaoController.listarMarcacoes()) {
 			
 				System.out.println(marcacaoCadastrada);
-				System.out.println("\n Horas Trabalhadas: " + MarcacaoController.calculo(marcacaoCadastrada));		
+				System.out.println("\n Horas Trabalhadas: " + MarcacaoController.calculo(marcacaoCadastrada));	
+				System.out.println("--------------------------------------------------------------------");
 					
 		}	
 	}  

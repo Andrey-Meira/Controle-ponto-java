@@ -54,12 +54,14 @@ public class CadastrarMarcacoes {
 			marcacao.setVoltaAlmoco(sc.nextDouble());
 			System.out.println("\n Digita a hora da saida :");
 			marcacao.setSaida(sc.nextDouble());
+			System.out.println("--------------------------------------------------------------------");
 			
 			
 			MarcacaoController.cadastrar(marcacao);
 		}else
 		{
 			System.out.println("Funcionario não encontrado");
+			System.out.println("--------------------------------------------------------------------");
 		}
 		
 		

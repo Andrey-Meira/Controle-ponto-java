@@ -11,6 +11,7 @@ public class ListarFuncionario {
 		
 		for(Funcionario funcionarioCadastrado : FuncionarioController.listar()) {
 			System.out.println(funcionarioCadastrado);
+			System.out.println("--------------------------------------------------------------------");
 		}
 	}
 	
