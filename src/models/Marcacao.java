@@ -5,19 +5,12 @@ import java.sql.Date;
 public class Marcacao {
 	
 	private Funcionario funcionarios;
-	private int pis;
 	private Double entrada;
 	private Double saidaAlmoco;
 	private Double voltaAlmoco;
 	private Double saida;
 	private String dataMarcacao;
 		
-	public int getPis() {
-		return pis;
-	}
-	public void setPis(int pis) {
-		this.pis = pis;
-	}
 	
 	public String getDataMarcacao() {
 		return dataMarcacao;
@@ -58,12 +51,8 @@ public class Marcacao {
 	
 	@Override
     public String toString() {
-        return "\nMarcação do dia " + dataMarcacao + 
-        		"\n" + funcionarios + 
-        		"\nEntrada: " + entrada + 
-        		"\nSaida Para Almoço: " + saidaAlmoco +
-        		"\nVolta do Almoco:  " + voltaAlmoco + 
-        		"\nSaida: " + saida;
+        return "\nMarcação do dia "+ dataMarcacao+ "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
+        		"\nVolta do Almoco:  " + voltaAlmoco + "\nSaida: " + saida;
     }
 	 
 	

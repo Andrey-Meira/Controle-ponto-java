@@ -31,7 +31,6 @@ public class CadastrarMarcacoes {
 			marcacao = new Marcacao();
 						
 			marcacao.setFuncionarios(funcionario);
-			marcacao.setPis(pisFuncionario);
 			System.out.println("\n Informe a data da marcação:");
 			
 			String dataMarcacao = sc.next(); 
